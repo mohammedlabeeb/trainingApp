@@ -6,10 +6,10 @@ import { Component, OnInit, OnChanges, OnDestroy, DoCheck, AfterContentInit, Aft
     <p>
       lc-child works!
     </p>
-    <div *ngIf="showContent"><ng-content></ng-content></div>
+    <div id="content" *ngIf="showContent"><ng-content></ng-content></div>
     <div>Param1 :  {{param1}}    </div>
     <div>Param2 :  {{param2.name}} -  {{param2.age}} -  {{param2.phone}}   </div>
-    <div>Heading :  {{heading}}    </div>
+    <div id="heading" >Heading :  {{heading}}    </div>
     <div>Details :  {{details}}    </div>
   `,
   styleUrls: ['./lc-child.component.css']
